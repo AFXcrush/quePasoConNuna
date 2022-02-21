@@ -1,116 +1,1134 @@
-.container {
-  padding: 0 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;500;900&family=Vollkorn:wght@500&display=swap");
+.inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-.main {
+.inicioVideoBG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.inicioContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.inicioContent button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+  color: #feb654;
+  background: rgba(10, 44, 92, 0.75);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem;
+  outline: none;
+  border: 2px solid #feb654;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.inicioContent button:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.inicioContentNunaDocuLogo {
+  fill: white;
+  width: 300px;
+  margin-right: 2rem;
+}
+
+.inicioDescriptionContainer {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 44, 92, 0.75);
+}
+
+.inicioDescription p {
+  color: white;
+  max-width: 600px;
+}
+.inicioDescription h3 {
+  color: #feb654;
+  margin-top: 1rem;
+}
+.inicioDescription h3:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.acercaDeContent {
+  width: 100%;
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  overflow: auto;
+}
+.acercaDeContent h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.acercaDeContent p {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.acercaDe {
+  width: 100%;
+  display: flex;
+  padding-bottom: 9.375rem;
+  border-bottom: 2px solid #bf6aec;
+}
+
+.acercaDeText {
+  width: 60%;
+  padding-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.acercaDeText img {
+  display: block;
+  width: 60%;
+}
+
+.acercaDeTextContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.slideContainer {
+  width: 40%;
+}
+
+.slideImagesContainer {
+  width: 100%;
+}
+.slideImagesContainer img {
+  display: block;
+  width: 100%;
+}
+
+.personajes {
+  width: 100%;
+  height: auto;
+  margin: 9.375rem 0;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 9.375rem;
+  border-bottom: 2px solid #bf6aec;
+}
+.personajes h1 {
+  margin-left: 9.375rem;
+}
+
+.personajesThumbnail {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+}
+
+.personajesThumbnailGrid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.personajesThumbnailContainer {
+  width: 100%;
+  height: auto;
+}
+.personajesThumbnailContainer img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.personajesThumbnailContainer img:hover {
+  box-shadow: 0 0 10px #bf6aec;
+  transition: 0.3s;
+}
+
+.personajesDescription {
+  width: 50%;
+  margin-left: 1.5rem;
+}
+.personajesDescription p {
+  width: 60%;
+  margin-top: 2rem;
+}
+
+.imagenContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.imagenContainer img {
+  width: 40%;
+}
+
+.nombreContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nombreBarra {
+  background-color: #0a2c5c;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+}
+.nombreBarra span {
+  font-size: 2rem;
+  margin-left: 3rem;
+  color: #bf6aec;
+}
+
+.equipo {
+  padding: 6.25rem 9.375rem;
+}
+
+.equipoDescripcion {
+  position: relative;
+  width: 40%;
+  margin: 6.25rem auto;
+  padding: 6.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 8px solid black;
+  border-radius: 2rem;
+}
+.equipoDescripcion p {
+  text-align: center;
+  font-weight: 300;
+  color: #feb654;
+}
+.equipoDescripcion p:last-child {
+  margin-top: 1.5rem;
+  color: #ff1c00;
+}
+
+.equipoLogo {
+  display: block;
+  width: 200px;
+  position: absolute;
+  top: -22%;
+}
+
+.galeriaContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.galeria {
+  padding: 6.25rem 9.375rem;
+}
+.galeria h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.submitFanartContainer {
+  width: 100%;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.submitFanartText {
+  width: 50%;
+}
+.submitFanartText h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.submitFanartText p {
+  font-weight: 500;
+  color: #bf6aec;
+  margin: 1.5rem 0;
+}
+.submitFanartText ol {
+  margin-left: 1.5rem;
+}
+.submitFanartText ol li {
+  list-style: circle !important;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.submitFanartButton {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.submitFanartButton img {
+  width: 140px;
+  display: block;
+}
+.submitFanartButton button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+  color: #feb654;
+  background: rgba(10, 44, 92, 0.75);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem;
+  outline: none;
+  border: 2px solid #feb654;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.submitFanartButton button:hover {
+  color: white;
+  transition: 0.3s;
+}
 
-.footer {
+.galeriaGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.fanartContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.fanArtImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  display: block;
+}
+.fanArtImg:hover {
+  filter: brightness(1.3);
+  transition: 0.3s;
+}
+
+.modalImgContainer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.modalImgContainer p {
+  font-weight: 300;
+}
+
+.modalImg {
+  display: block;
+  height: 90%;
+}
+
+.noticiasContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.noticias {
+  padding: 6.25rem 9.375rem;
+}
+.noticias h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.noticiasContentText {
+  margin: 2rem 0;
+}
+.noticiasContentText h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.noticiasContentText p {
+  font-weight: 500;
+  color: #bf6aec;
+  margin: 1.5rem 0;
+}
+
+.noticiaPrincipal {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.noticiaThumbnailDescription {
+  width: 60%;
+  margin-top: 0.5rem;
+}
+
+.noticiasGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.noticiaThumbnail {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.noticiaThumbnailImg,
+.noticiaPrincipalImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+.noticiaThumbnailImg:hover,
+.noticiaPrincipalImg:hover {
+  filter: brightness(1.3);
+  transition: 0.3s;
+}
+
+.noticiaThumbnailTextContainer {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(10, 44, 92, 0.5);
+  padding: 1rem;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.noticiaThumbnailTextContainer h2,
+.noticiaThumbnailTextContainer h3 {
+  font-weight: 300;
+}
+.noticiaThumbnailTextContainer p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #feb654;
+}
+.noticiaThumbnailTextContainer span {
+  font-weight: 300;
+}
+
+.modalNoticiaContainer {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bf6aec;
+  padding: 1.5rem;
+}
+
+.modalNoticiaImg {
+  width: 40%;
+  display: block;
+}
+
+.modalNoticiaText {
+  width: 60%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 2rem;
+}
+.modalNoticiaText h2 {
+  color: #feb654;
+  font-size: 2rem;
+}
+.modalNoticiaText p {
+  font-weight: 100;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  text-align: justify;
+}
+.modalNoticiaText iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.experienciasContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.experiencias {
+  padding: 6.25rem 9.375rem;
+}
+.experiencias h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.experienciasGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.experienciaThumbnail {
+  width: 100%;
+}
+
+.experienciaThumbnailText {
+  border: 1px solid #bf6aec;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem;
+  cursor: pointer;
+}
+.experienciaThumbnailText:hover {
+  background-color: rgba(10, 44, 92, 0.5);
+  transition: 0.3s;
+}
+
+.experienciaThumbnailCabecera {
+  display: flex;
+}
+.experienciaThumbnailCabecera h2 {
+  width: 75%;
+  font-weight: 300;
+}
+
+.experienciaAutor {
+  width: 25%;
+  color: #bf6aec;
+  font-weight: 300;
+}
+
+.experienciaFecha {
+  color: #feb654;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.experienciaRelato {
+  margin-top: 1.5rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.modalExperienciaContainer {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bf6aec;
+  padding: 1.5rem;
+}
+
+.modalExperienciaCabecera {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.modalExperienciaCabecera h2 {
+  color: #feb654;
+  font-size: 2rem;
+}
+.modalExperienciaCabecera h3 {
+  color: #bf6aec;
+  font-weight: 300;
+}
+
+.modalExperienciaFecha {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.modalExperienciaRelato {
+  height: 100%;
+  overflow: auto;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+.modalExperienciaRelato p {
+  font-weight: 100;
+  line-height: 1.5rem;
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+.juegoContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+.juegoContent section:not(:last-child) {
+  border-bottom: 2px solid #bf6aec;
+}
+
+.juegoIntro {
+  width: 100%;
+  display: flex;
+  padding-bottom: 9.375rem;
+}
+.juegoIntro h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.juegoIntro p {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.juegoIntroImgContainer {
+  width: 40%;
+}
+.juegoIntroImgContainer img {
+  width: 100%;
+  display: block;
+}
+
+.juegoText {
+  width: 60%;
+  padding-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.juegoText img {
+  display: block;
+  width: 60%;
+}
+
+.juegoTextContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.juegoDescarga {
+  padding: 6.25rem 9.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.juegoDescarga h1 {
+  color: #feb654;
+  font-size: 2rem;
+}
+.juegoDescarga p {
+  font-weight: 300;
+}
+.juegoDescarga *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.storeLogosContainer {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.steamLogo {
+  display: block;
+  width: 60px;
+  fill: #feb654;
+  cursor: pointer;
+}
+
+.appStoreLogos {
+  display: block;
+  height: 100px;
+  cursor: pointer;
+}
+
+.juegoMockupImg {
+  display: block;
+  width: 50%;
+}
+
+.juegoDescripcion,
+.juegoCartas {
+  padding: 6.25rem 9.375rem;
+}
+.juegoDescripcion h1,
+.juegoCartas h1 {
+  color: #feb654;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.juegoDescripcion p,
+.juegoCartas p {
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.juegoDescripcionTextContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.juegoDescripcionText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 3rem;
+}
+.juegoDescripcionText p {
+  text-align: right;
+}
+
+.juegoDescripcionImgContainer {
+  width: 50%;
+}
+.juegoDescripcionImgContainer img {
+  display: block;
+  width: 100%;
+}
+
+.juegoCartas {
+  width: 100%;
+  display: flex;
   align-items: center;
 }
 
-.footer a {
+.juegoCartasImgContainer {
+  width: 70%;
+  position: relative;
+}
+.juegoCartasImgContainer img {
+  display: block;
+  width: 100%;
+}
+
+.logoJuegoNuna {
+  width: 300px;
+  display: block;
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  fill: white;
+}
+
+.juegoCartasDescripcionContainer {
+  width: 30%;
+}
+
+.podcastContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.podcastBanner {
+  width: 100%;
+  position: relative;
+}
+
+.podcastBannerImgContainer {
+  width: 100%;
+}
+.podcastBannerImgContainer img {
+  width: 100%;
+  display: block;
+}
+
+.podcastBannerTxtCntainer {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 9.375rem;
+}
+.podcastBannerTxtCntainer h1 {
+  font-size: 2rem;
+}
+.podcastBannerTxtCntainer h2 {
+  font-size: 1.3rem;
+  color: #bf6aec;
+}
+
+.podcastText {
+  padding: 6.25rem 9.375rem;
+}
+.podcastText h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.podcastText p {
+  font-weight: 300;
+}
+
+.podcastAudios {
+  margin-top: 6.25rem;
+}
+
+.contactoContent {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.contactoGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.contactoFormContainer {
+  width: 100%;
+  padding: 6.25rem 9.375rem;
+}
+.contactoFormContainer h2 {
+  color: #feb654;
+}
+
+.contactoFormTitle {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contactoForm {
+  width: 70%;
+  margin: 2rem;
+  border: 1px solid #bf6aec;
+  display: flex;
+}
+
+.formDatosContainer {
+  width: 40%;
+  margin: 2rem;
+  margin-right: 0;
+  padding: 2rem;
+  border-right: 1px solid #bf6aec;
+}
+.formDatosContainer h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  border-bottom: 3px solid #bf6aec;
+  padding-bottom: 1rem;
+  margin: 0 2rem 2rem 0;
+}
+
+.formDatos,
+.formMensaje {
+  display: flex;
+  flex-direction: column;
+}
+.formDatos label,
+.formMensaje label {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.formDatos label:not(:first-child),
+.formMensaje label:not(:first-child) {
+  margin-top: 1rem;
+}
+.formDatos input,
+.formMensaje input {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed white;
+  color: white;
+}
+.formDatos textarea,
+.formMensaje textarea {
+  max-width: 100%;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.formDatos {
+  padding-right: 2rem;
+}
+
+.formMensajeContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.formMensajeContainer button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  background-color: #feb654;
+  font-family: "Lexend Deca", sans-serif;
+  color: #0a2c5c;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.formMensajeContainer button:hover {
+  color: #bf6aec;
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.formMensaje {
+  padding: 2rem;
+}
+
+.contactoRedes {
+  margin: 6.25rem 0 2rem 6.25rem;
+  display: flex;
+  align-items: center;
+}
+.contactoRedes svg {
+  display: block;
+  width: 32px;
+  fill: #bf6aec;
+  margin-left: 1rem;
+}
+.contactoRedes svg:hover {
+  fill: white;
+  transition: 0.3s;
+}
+.contactoRedes p {
+  font-weight: 300;
+}
+
+.contactoSideBanner {
+  height: 100%;
+  position: relative;
+}
+.contactoSideBanner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.documentalContent {
+  padding: 6.25rem 9.375rem;
+}
+.documentalContent h1 {
+  color: #feb654;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.documentalContent iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-top: 2rem;
+}
+
+.layout {
+  background: #0a2c5c;
+  background: linear-gradient(0deg, black 0%, #0a2c5c 100%);
+  color: white;
+}
+
+.cintas {
+  width: 100%;
+  display: flex;
+}
+
+.cintaInvertida {
+  transform: scale(-1, 1);
+}
+
+.menuBar {
+  width: 17vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0a2c5c;
+  background: linear-gradient(0deg, black 0%, #0a2c5c 100%);
+  z-index: 10;
+  border-left: 6px solid #feb654;
+  border-right: 6px solid #feb654;
+  border-bottom: 6px solid #feb654;
+  display: grid;
+  grid-template-rows: 2fr 1fr 4fr 2fr 1fr;
+  grid-template-areas: "sun" "docuLogo" "menuList" "redes" "mountain";
+}
+
+.menuSunContainer {
+  grid-area: sun;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+.menuSunContainer div {
+  width: 100%;
+  position: absolute;
+  top: -75%;
+}
+.menuSunContainer svg {
+  display: block;
+  width: 100%;
+}
+
+.logoNunaDocuContainer {
+  grid-area: docuLogo;
+  width: 75%;
+  margin: 0 auto;
+}
+.logoNunaDocuContainer svg {
+  display: block;
+  height: 90%;
+  margin: 0 auto;
+  fill: white;
+}
+
+.menuLinksContainer {
+  grid-area: menuList;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+}
+.menuLinksContainer ul {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menuLinksContainer ul li {
+  color: white;
+}
+.menuLinksContainer ul li a {
+  font-weight: 300;
+}
+.menuLinksContainer ul li a:hover {
+  font-weight: 500;
+  transform: scale(1.03);
+  transition: 0.3s;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.menuRedesContainer {
+  grid-area: redes;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.menuRedesContainer h3 {
+  color: #feb654;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.redesLogos {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+}
+.redesLogos svg {
+  display: block;
+  width: 32px;
+  fill: #feb654;
+}
+.redesLogos svg:hover {
+  fill: white;
+  transition: 0.3s;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.menuFooter p {
+  color: #bf6aec;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-align: center;
+}
+.menuFooter p:last-child {
+  color: white;
+  font-size: 0.5rem;
+  margin-top: 1rem;
 }
 
-.grid {
+.menuMountainContainer {
+  grid-area: mountain;
+  align-self: flex-end;
+}
+.menuMountainContainer svg {
+  fill: #bf6aec;
+}
+
+.menuTagContainer {
+  position: absolute;
+  top: 50%;
+  left: 17vw;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.menuTag {
+  width: 16px;
+  margin-right: 0.3rem;
+}
+
+.triangleOpen {
+  border-top: 16px solid transparent;
+  border-left: 16px solid #feb654;
+  border-bottom: 16px solid transparent;
+}
+
+.triangleClose {
+  border-top: 16px solid transparent;
+  border-right: 16px solid #feb654;
+  border-bottom: 16px solid transparent;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(25px);
+  z-index: 11;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.modalVideo {
+  width: 75%;
+  aspect-ratio: 16/9;
 }
