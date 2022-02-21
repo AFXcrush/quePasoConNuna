@@ -9,7 +9,7 @@ import personajes from "./api/personajesNuna.json";
 import CintaVerde from "../components/CintaVerde";
 import CintaAmarilla from "../components/CintaAmarilla";
 
-import Summer22Logo from "../assets/svg/logo-summer22.svg";
+import Summer22Logo from "../assets/svg/logo-Summer22.svg";
 
 import styles from "../styles/Home.module.css";
 import "react-slideshow-image/dist/styles.css";
