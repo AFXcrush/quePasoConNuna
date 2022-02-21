@@ -1,0 +1,18 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.documentalContent {
+  padding: s.space(s7) s.space(s8);
+
+  h1 {
+    @include gs.bigTitle;
+  }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: s.space(s5);
+  }
+}

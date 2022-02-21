@@ -1,0 +1,144 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.contactoContent {
+  @include gs.gradientBg;
+}
+
+.contactoGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.contactoFormContainer {
+  width: 100%;
+  padding: s.space(s7) s.space(s8);
+
+  h2 {
+    color: c.$secondary;
+  }
+}
+
+.contactoFormTitle {
+  @include gs.bigTitle;
+}
+
+.contactoForm {
+  width: 70%;
+  margin: s.space(s5);
+  border: 1px solid c.$acent;
+  display: flex;
+}
+
+.formDatosContainer {
+  width: 40%;
+  margin: s.space(s5);
+  margin-right: 0;
+  padding: s.space(s5);
+  border-right: 1px solid c.$acent;
+
+  h1 {
+    font-size: s.size(big);
+    font-weight: f.weight(f2);
+    border-bottom: 3px solid c.$acent;
+    padding-bottom: s.space(s3);
+    margin: 0 s.space(s5) s.space(s5) 0;
+  }
+}
+
+.formDatos,
+.formMensaje {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: f.weight(f2);
+    margin-bottom: s.space(s3);
+
+    &:not(:first-child) {
+      margin-top: s.space(s3);
+    }
+  }
+
+  input {
+    border: none;
+    background: none;
+    border-bottom: 1px dashed c.$white;
+    color: c.$white;
+  }
+
+  textarea {
+    max-width: 100%;
+    border: none;
+    background: none;
+    color: c.$white;
+  }
+}
+
+.formDatos {
+  padding-right: s.space(s5);
+}
+
+.formMensajeContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    background-color: c.$secondary;
+    font-family: f.$primary;
+    color: c.$primary;
+    font-size: s.size(normal);
+    font-weight: f.weight(f3);
+    cursor: pointer;
+
+    &:hover {
+      color: c.$acent;
+      font-size: s.size(medium);
+      transition: 0.3s;
+    }
+  }
+}
+
+.formMensaje {
+  padding: s.space(s5);
+}
+
+.contactoRedes {
+  margin: s.space(s7) 0 s.space(s5) s.space(s7);
+  display: flex;
+  align-items: center;
+
+  svg {
+    display: block;
+    width: 32px;
+    fill: c.$acent;
+    margin-left: s.space(s3);
+
+    &:hover {
+      fill: c.$white;
+      transition: 0.3s;
+    }
+  }
+
+  p {
+    font-weight: f.weight(f2);
+  }
+}
+
+.contactoSideBanner {
+  height: 100%;
+  position: relative;
+
+  img {
+    @include gs.objectFit;
+  }
+}

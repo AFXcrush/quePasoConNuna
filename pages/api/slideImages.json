@@ -1,0 +1,22 @@
+[
+  {
+    "id": "s1",
+    "img": "https://res.cloudinary.com/afximagesection/image/upload/v1643081810/NunaDocu/slide_1_th6vvf.jpg",
+    "alt": "slide 1"
+  },
+  {
+    "id": "s2",
+    "img": "https://res.cloudinary.com/afximagesection/image/upload/v1643081810/NunaDocu/slide_3_vsjgke.jpg",
+    "alt": "slide 2"
+  },
+  {
+    "id": "s3",
+    "img": "https://res.cloudinary.com/afximagesection/image/upload/v1643081810/NunaDocu/slide_2_qydzak.jpg",
+    "alt": "slide 3"
+  },
+  {
+    "id": "s4",
+    "img": "https://res.cloudinary.com/afximagesection/image/upload/v1643081810/NunaDocu/slide_4_ctunvr.jpg",
+    "alt": "slide 4"
+  }
+]

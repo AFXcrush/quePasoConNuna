@@ -1,0 +1,31 @@
+[
+  {
+    "nombre": "Acerca de",
+    "link": "/acercaDe"
+  },
+  {
+    "nombre": "Galería",
+    "link": "/galeria"
+  },
+  {
+    "nombre": "Experiencias",
+    "link": "/experiencias"
+  },
+  {
+    "nombre": "Noticias",
+    "link": "/noticias"
+  },
+  {
+    "nombre": "El juego",
+    "link": "/juego"
+  },
+  {
+    "nombre": "Podcast",
+    "link": "/podcast"
+  },
+
+  {
+    "nombre": "Contacto",
+    "link": "/contacto"
+  }
+]

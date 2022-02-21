@@ -1,0 +1,53 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.podcastContent {
+  @include gs.gradientBg;
+}
+
+.podcastBanner {
+  width: 100%;
+  position: relative;
+}
+
+.podcastBannerImgContainer {
+  width: 100%;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.podcastBannerTxtCntainer {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: s.space(s8);
+
+  h1 {
+    font-size: s.size(big);
+  }
+  h2 {
+    font-size: s.size(medium);
+    color: c.$acent;
+  }
+}
+
+.podcastText {
+  padding: s.space(s7) s.space(s8);
+
+  h1 {
+    @include gs.bigTitle;
+  }
+
+  p {
+    font-weight: f.weight(f2);
+  }
+}
+
+.podcastAudios {
+  margin-top: s.space(s7);
+}

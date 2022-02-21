@@ -1,0 +1,111 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.experienciasContent {
+  @include gs.gradientBg;
+}
+
+.experiencias {
+  padding: s.space(s7) s.space(s8);
+
+  h1 {
+    @include gs.bigTitle;
+  }
+}
+
+.experienciasGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.experienciaThumbnail {
+  width: 100%;
+}
+
+.experienciaThumbnailText {
+  border: 1px solid c.$acent;
+  border-radius: s.space(s4);
+  padding: s.space(s5) s.space(s5);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(c.$primary, 0.5);
+    transition: 0.3s;
+  }
+}
+
+.experienciaThumbnailCabecera {
+  display: flex;
+  h2 {
+    width: 75%;
+    font-weight: f.weight(f2);
+  }
+}
+
+.experienciaAutor {
+  width: 25%;
+  color: c.$acent;
+  font-weight: f.weight(f2);
+}
+
+.experienciaFecha {
+  color: c.$secondary;
+  font-size: s.size(small);
+  font-weight: f.weight(f2);
+}
+
+.experienciaRelato {
+  margin-top: s.space(s4);
+  font-weight: f.weight(f1);
+  line-height: s.space(s4);
+}
+
+.modalExperienciaContainer {
+  width: 50%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid c.$acent;
+  padding: s.space(s4);
+}
+
+.modalExperienciaCabecera {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  h2 {
+    color: c.$secondary;
+    font-size: s.size(big);
+  }
+
+  h3 {
+    color: c.$acent;
+    font-weight: f.weight(f2);
+  }
+}
+
+.modalExperienciaFecha {
+  width: 100%;
+  margin-top: s.space(s3);
+}
+
+.modalExperienciaRelato {
+  height: 100%;
+  overflow: auto;
+  margin-top: s.space(s4);
+  padding: 0 s.space(s4);
+
+  p {
+    font-weight: f.weight(f1);
+    line-height: s.space(s4);
+    margin: s.space(s3) 0;
+    text-align: justify;
+  }
+}

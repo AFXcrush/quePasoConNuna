@@ -1,0 +1,132 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.noticiasContent {
+  @include gs.gradientBg;
+}
+
+.noticias {
+  padding: s.space(s7) s.space(s8);
+
+  h1 {
+    @include gs.bigTitle;
+  }
+}
+
+.noticiasContentText {
+  margin: s.space(s5) 0;
+
+  h2 {
+    font-size: s.size(big);
+    font-weight: f.weight(f2);
+  }
+
+  p {
+    font-weight: f.weight(f3);
+    color: c.$acent;
+    margin: s.space(s4) 0;
+  }
+}
+
+.noticiaPrincipal {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  margin-bottom: s.space(s2);
+}
+
+.noticiaThumbnailDescription {
+  width: 60%;
+  margin-top: s.space(s2);
+}
+
+.noticiasGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: s.space(s2);
+}
+
+.noticiaThumbnail {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.noticiaThumbnailImg,
+.noticiaPrincipalImg {
+  @include gs.objectFit;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.3);
+    transition: 0.3s;
+  }
+}
+
+.noticiaThumbnailTextContainer {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(c.$primary, 0.5);
+  padding: s.space(s3);
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+
+  h2,
+  h3 {
+    font-weight: f.weight(f2);
+  }
+
+  p {
+    font-size: s.size(small);
+    font-weight: f.weight(f2);
+    color: c.$secondary;
+  }
+
+  span {
+    font-weight: f.weight(f2);
+  }
+}
+
+.modalNoticiaContainer {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid c.$acent;
+  padding: s.space(s4);
+}
+
+.modalNoticiaImg {
+  width: 40%;
+
+  display: block;
+}
+
+.modalNoticiaText {
+  width: 60%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 s.space(s5);
+
+  h2 {
+    color: c.$secondary;
+    font-size: s.size(big);
+  }
+
+  p {
+    font-weight: f.weight(f1);
+    line-height: s.space(s4);
+    margin: s.space(s3) 0;
+    text-align: justify;
+  }
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}

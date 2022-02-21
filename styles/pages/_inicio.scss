@@ -1,0 +1,61 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.inicio {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.inicioVideoBG {
+  @include gs.objectFit;
+  z-index: -1;
+}
+
+.inicioContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+
+  button {
+    @include gs.btnPrimary;
+  }
+}
+
+.inicioContentNunaDocuLogo {
+  fill: c.$white;
+  width: 300px;
+  margin-right: s.space(s5);
+}
+
+.inicioDescriptionContainer {
+  width: 100%;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(c.$primary, 0.75);
+}
+
+.inicioDescription {
+  p {
+    color: c.$white;
+    max-width: 600px;
+  }
+
+  h3 {
+    color: c.$secondary;
+    margin-top: s.space(s3);
+
+    &:hover {
+      color: c.$white;
+      transition: 0.3s;
+    }
+  }
+}

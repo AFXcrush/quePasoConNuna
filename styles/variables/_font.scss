@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;500;900&family=Vollkorn:wght@500&display=swap");
+
+$primary: "Lexend Deca", sans-serif;
+$secondary: "Vollkorn", serif;
+
+$weight: (
+  f1: 100,
+  f2: 300,
+  f3: 500,
+  f4: 900,
+);
+
+@function weight($w) {
+  @return map-get($weight, $w);
+}

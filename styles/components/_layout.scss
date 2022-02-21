@@ -1,0 +1,16 @@
+@use "../variables/color" as c;
+
+.layout {
+  background: c.$primary;
+  background: c.$gradient;
+  color: c.$white;
+}
+
+.cintas {
+  width: 100%;
+  display: flex;
+}
+
+.cintaInvertida {
+  transform: scale(-1, 1);
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "p1",
+    "nombre": "Alichu",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/alichu_tn_jw67dp.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/alichu_img_p03ij9.jpg",
+    "desc": "Hermano de Yaku. Se encuentra gravemente enfermo a causa del invierno perpetuo que envuelve a su pueblo. Es visitado constantemente por Justina, quien acaba llevándoselo al HananPacha."
+  },
+  {
+    "id": "p2",
+    "nombre": "Yaku",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/yaku_tn_jamfqo.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/yaku_img_gdsjfc.jpg",
+    "desc": "Aprendiz de Danzak. Deberá enfrentarse a sus miedos y a su propio rencor para recuperar a su hermano Alichu. Siente empatía ante el sufrimiento de su pueblo e impotencia y frustración al no poder hacer nada para detener el invierno."
+  },
+  {
+    "id": "p3",
+    "nombre": "Arístides",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643077737/NunaDocu/aristides_tn_exvaes.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/aristides_img_grveuu.jpg",
+    "desc": "Danzak portador del Amaru. Abuelo de Yaku y Alichu. Considera que nadie debe intentar dominar a los espíritus de la naturaleza. Va en busca de la mágica flor de la Cantuta para poder salvar a Alichu de la enfermedad del frío."
+  },
+  {
+    "id": "p4",
+    "nombre": "Aukar",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643078077/NunaDocu/aukar_tn_cwfpvy.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643078077/NunaDocu/aukar_img_bntogl.jpg",
+    "desc": "Danzak principal del pueblo de Llantumarca; quiere apoderarse del Amaru y dominarlo por la fuerza para intentar detener el invierno perpetuo."
+  },
+  {
+    "id": "p5",
+    "nombre": "Justina",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643077737/NunaDocu/justina_tn_dqiwpj.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643077737/NunaDocu/justina_img_r1gbga.jpg",
+    "desc": "Conopa de la hoja de coca. Lleva niños del mundo humano hacia el HananPacha o mundo espiritual para evitar que mueran a causa del invierno."
+  },
+  {
+    "id": "p6",
+    "nombre": "Añañau",
+    "thumbnail": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/ananau_tn_uceoij.jpg",
+    "image": "https://res.cloudinary.com/afximagesection/image/upload/v1643077736/NunaDocu/ananau_img_ykjxoi.jpg",
+    "desc": "Ayudante de Justina. Es vivaz, sarcástico y puede hablar todas las lenguas del Hananpacha. Le salen un par de alas en forma de cintas de tela cuando la conopa lo alimenta con uno de sus bollos mágicos."
+  }
+]

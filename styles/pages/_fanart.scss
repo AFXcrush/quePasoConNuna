@@ -1,0 +1,105 @@
+@use "../variables/color" as c;
+@use "../variables/size" as s;
+@use "../variables/font" as f;
+@use "../variables/globalStyles" as gs;
+
+.galeriaContent {
+  @include gs.gradientBg;
+}
+
+.galeria {
+  padding: s.space(s7) s.space(s8);
+
+  h1 {
+    @include gs.bigTitle;
+  }
+}
+
+.submitFanartContainer {
+  width: 100%;
+  display: flex;
+  margin: s.space(s5) 0;
+}
+
+.submitFanartText {
+  width: 50%;
+
+  h2 {
+    font-size: s.size(big);
+    font-weight: f.weight(f2);
+  }
+
+  p {
+    font-weight: f.weight(f3);
+    color: c.$acent;
+    margin: s.space(s4) 0;
+  }
+
+  ol {
+    margin-left: s.space(s4);
+
+    li {
+      list-style: circle !important;
+      font-weight: f.weight(f2);
+      margin: s.space(s3) 0;
+    }
+  }
+}
+
+.submitFanartButton {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 140px;
+    display: block;
+  }
+
+  button {
+    @include gs.btnPrimary;
+  }
+}
+
+.galeriaGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: s.space(s2);
+}
+
+.fanartContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.fanArtImg {
+  @include gs.objectFit;
+  display: block;
+
+  &:hover {
+    filter: brightness(1.3);
+    transition: 0.3s;
+  }
+}
+
+.modalImgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  p {
+    font-weight: f.weight(f2);
+  }
+}
+
+.modalImg {
+  display: block;
+  height: 90%;
+}
