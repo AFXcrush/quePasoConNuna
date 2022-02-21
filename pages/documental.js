@@ -9,7 +9,7 @@ export default function Documental() {
     <Layout title={"Documental ¿Qué Pasó con Nuna?"}>
       <CintaVerde />
       <div className={styles.documentalContent}>
-        <h1>Documental "¿Qué Pasó con Nuna?"</h1>
+        <h1>Documental '¿Qué Pasó con Nuna?'</h1>
         <iframe
           src="https://www.youtube.com/embed/D2X1rX4wU-Y"
           title="YouTube video player"

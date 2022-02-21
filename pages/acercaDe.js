@@ -27,10 +27,10 @@ export default function AcercaDe() {
             <div className={styles.acercaDeTextContainer}>
               <h1>Acerca de</h1>
               <p>
-                "¿Qué pasó con Nuna?" es un mini documental que recopila
+                '¿Qué pasó con Nuna?' es un mini documental que recopila
                 información inédita sobre los inicios, la producción y el
-                estancamiento de la película peruana animada "Nuna: La agonía
-                del Wamani". A través de entrevistas exclusivas con el equipo de
+                estancamiento de la película peruana animada 'Nuna: La agonía
+                del Wamani'. A través de entrevistas exclusivas con el equipo de
                 producción damos a conocer el futuro del esperado largometraje y
                 qué pasó durante su realización para que se extienda tanto la
                 fecha de estreno, planeada originalmente en el 2019.

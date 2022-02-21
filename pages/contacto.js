@@ -97,11 +97,16 @@ export default function Contacto() {
               <a
                 href="https://www.facebook.com/summerdosmilveintidos"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FBLogo />
               </a>
 
-              <a href="https://www.instagram.com/nunaeljuego/" target="_blank">
+              <a
+                href="https://www.instagram.com/nunaeljuego/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <InstaLogo />
               </a>
             </div>

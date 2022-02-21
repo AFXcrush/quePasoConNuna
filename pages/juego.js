@@ -66,7 +66,7 @@ export default function Juego() {
             <div className={styles.juegoDescripcionText}>
               <h1>Sobre el juego</h1>
               <p>
-                Aventura gráfica "point & click" en primera persona donde
+                Aventura gráfica 'point & click' en primera persona donde
                 iniciarás como miembro del equipo de ORIGAMI STUDIO en su primer
                 día de trabajo.<br></br>
                 <br></br>Durante la historia se presentan diferentes diálogos

@@ -55,7 +55,7 @@ export default function Experiencias() {
                   que conozcas de algún familiar, pueblo o locación.
                 </li>
                 <li>
-                  Al momento de presionar el botón "Sube tu Relato" asegúrate de
+                  Al momento de presionar el botón 'Sube tu Relato' asegúrate de
                   poner un título para tu obra e indicar tu nombre o el nombre
                   del autor (o pseudónimo).
                 </li>

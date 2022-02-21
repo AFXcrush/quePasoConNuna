@@ -27,6 +27,7 @@ export default function SoundCloudBar({ src, href, title }) {
           href="https://soundcloud.com/user-545763188"
           title="Más allá de los mitos."
           target="_blank"
+          rel="noreferrer"
           style={{ color: "#cccccc", textDecoration: "none" }}
         >
           Más allá de los mitos.
@@ -36,6 +37,7 @@ export default function SoundCloudBar({ src, href, title }) {
           href={href}
           title={title}
           target="_blank"
+          rel="noreferrer"
           style={{ color: "#cccccc", textDecoration: "none" }}
         >
           {title}

@@ -47,8 +47,8 @@ export default function Galeria() {
               <p>Sube tu arte a nuestra web con los siguientes pasos:</p>
               <ol>
                 <li>
-                  Crea tu pieza original basada en la película "Nuna: La aginía
-                  del Wamani".
+                  Crea tu pieza original basada en la película 'Nuna: La aginía
+                  del Wamani'.
                 </li>
                 <li>
                   Puedes usar diferentes técnicas (a mano, digital, collage,
@@ -56,7 +56,7 @@ export default function Galeria() {
                 </li>
                 <li>La imagen no debe pesar más de 2mb.</li>
                 <li>
-                  Al momento de presionar el botón "Sube tu arte" asegúrate de
+                  Al momento de presionar el botón 'Sube tu arte' asegúrate de
                   poner un título para tu obra e indicar tu nombre o el nombre
                   del autor (o pseudónimo).
                 </li>

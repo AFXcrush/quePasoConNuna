@@ -33,7 +33,7 @@ export default function Home() {
             <div className={styles.inicioDescription}>
               <p>
                 Documental sobre el inicio, desarrollo y estancamiento de la
-                película animada "Nuna: La Agonía del Wamani"
+                película animada 'Nuna: La Agonía del Wamani'
               </p>
 
               <a href="/documental" target="_blank">
