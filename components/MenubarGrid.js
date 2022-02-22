@@ -93,7 +93,7 @@ export default function MenubarGrid() {
               Summer22 & Origami Studios | 2022<br></br>Todos los derechos
               reservados
             </p>
-            <p>Developed by Carlos cruz</p>
+            <p>Developed by Carlos Cruz</p>
           </div>
         </div>
       </section>
