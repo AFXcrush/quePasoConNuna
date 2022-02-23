@@ -57,6 +57,12 @@ export default function AcercaDe() {
               );
             })}
           </Fade>
+
+          <img
+            className={styles.acercaDeHalfImg}
+            src="https://res.cloudinary.com/afximagesection/image/upload/v1645626608/NunaDocu/justina_half_oimj4q.png"
+            alt="mitad de Justina"
+          />
         </section>
 
         <section className={styles.personajes}>

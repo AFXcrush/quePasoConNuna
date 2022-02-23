@@ -39,6 +39,12 @@ export default function Juego() {
               alt="Zorros Añañau"
             />
           </div>
+
+          <img
+            className={styles.juegoHalfImg}
+            src="https://res.cloudinary.com/afximagesection/image/upload/v1645626608/NunaDocu/aristides_half_lzbrw2.png"
+            alt="Aristides mitad"
+          />
         </section>
 
         <section className={styles.juegoDescarga}>

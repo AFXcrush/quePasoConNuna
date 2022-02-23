@@ -20,6 +20,7 @@
 .acercaDe {
   width: 100%;
   display: flex;
+  position: relative;
   padding-bottom: s.space(s8);
   border-bottom: 2px solid c.$acent;
 }
@@ -53,6 +54,15 @@
     display: block;
     width: 100%;
   }
+}
+
+.acercaDeHalfImg {
+  display: block;
+  max-width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  z-index: 2;
 }
 
 .personajes {

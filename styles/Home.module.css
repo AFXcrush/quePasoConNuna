@@ -89,6 +89,7 @@
 .acercaDe {
   width: 100%;
   display: flex;
+  position: relative;
   padding-bottom: 9.375rem;
   border-bottom: 2px solid #bf6aec;
 }
@@ -120,6 +121,15 @@
 .slideImagesContainer img {
   display: block;
   width: 100%;
+}
+
+.acercaDeHalfImg {
+  display: block;
+  max-width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  z-index: 2;
 }
 
 .personajes {
@@ -597,6 +607,7 @@
 .juegoIntro {
   width: 100%;
   display: flex;
+  position: relative;
   padding-bottom: 9.375rem;
 }
 .juegoIntro h1 {
@@ -633,6 +644,15 @@
 .juegoTextContainer {
   width: 60%;
   margin: auto;
+}
+
+.juegoHalfImg {
+  display: block;
+  max-width: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  z-index: 2;
 }
 
 .juegoDescarga {
