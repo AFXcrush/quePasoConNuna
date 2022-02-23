@@ -11,7 +11,7 @@ export default function Home() {
   const [showModal2, setShowModal2] = useState(false);
 
   return (
-    <IndexLayout title={"Nuna: Vida, pasión y muerte"}>
+    <IndexLayout title={"¿Qué pasó con Nuna? | Documental"}>
       <div className={styles.inicio}>
         <video className={styles.inicioVideoBG} autoPlay loop muted>
           <source src="https://res.cloudinary.com/afximagesection/video/upload/v1645179064/NunaDocu/intro_Trailer_QUE_PASO_CON_NUNA_cwmnwd.mp4" />
@@ -20,7 +20,7 @@ export default function Home() {
         <section className={styles.inicioContent}>
           <div className={styles.inicioBtnsContainer}>
             <button onClick={() => setShowModal2(true)}>
-              Teaser del documental
+              Trailer del documental
             </button>
             <button onClick={() => setShowModal(true)}>
               Teaser de la película
@@ -46,7 +46,7 @@ export default function Home() {
         <ModalVideo
           showModal={showModal2}
           setShowModal={setShowModal2}
-          embedVideo={"https://www.youtube.com/embed/D2X1rX4wU-Y"}
+          embedVideo={"https://www.youtube.com/embed/Ae_g2B6iP_Y"}
         />
         <ModalVideo
           showModal={showModal}
