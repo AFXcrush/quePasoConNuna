@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import CintaVerde from "../components/CintaVerde";
 import CintaAmarilla from "../components/CintaAmarilla";
 import SteamLogo from "../assets/svg/Steam-logo.svg";
-import LogoJuegoNuna from "../assets/svg/logo-juego-nuna.svg";
+import LogoJuegoNuna from "../assets/svg/logo-juego-cartas.svg";
 
 import styles from "../styles/Home.module.css";
 
@@ -85,7 +85,7 @@ export default function Juego() {
 
             <div className={styles.juegoDescripcionImgContainer}>
               <img
-                src="https://res.cloudinary.com/afximagesection/image/upload/v1645071383/NunaDocu/Screen_v2_esc_2_xbusly.png"
+                src="https://res.cloudinary.com/afximagesection/image/upload/v1645672639/NunaDocu/Screen_v2_esc_2_sin_globo_yhg8zz.png"
                 alt="Juego de diálogo"
               />
             </div>
@@ -96,7 +96,7 @@ export default function Juego() {
           <div className={styles.juegoCartasImgContainer}>
             <LogoJuegoNuna className={styles.logoJuegoNuna} />
             <img
-              src="https://res.cloudinary.com/afximagesection/image/upload/v1645076973/NunaDocu/Render_caja_mockup_qvtjxl.png"
+              src="https://res.cloudinary.com/afximagesection/image/upload/v1645670678/NunaDocu/Render_caja_mockup_bsmw5q.png"
               alt="Cartas coleccionables de Nuna para el videjuego"
             />
           </div>
