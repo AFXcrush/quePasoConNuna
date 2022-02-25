@@ -11,7 +11,7 @@ export default function Documental() {
       <div className={styles.documentalContent}>
         <h1>Documental '¿Qué Pasó con Nuna?'</h1>
         <iframe
-          src="https://www.youtube.com/embed/-C6oxyfGnSM"
+          src="https://www.youtube.com/embed/lxtGUp4jWmM"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
